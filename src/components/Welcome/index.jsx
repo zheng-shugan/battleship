@@ -21,6 +21,8 @@ import Header from '../Header'
 
 import rightImg from '/shipGroup.png'
 
+import './welcome.css'
+
 const Welcome = ({ setGameState, formData, setFormData }) => {
   const context = useContext(Context)
 
