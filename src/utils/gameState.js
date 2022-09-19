@@ -10,3 +10,4 @@ export const COMPUTER_ATTACK = 'computerAttack';
 export const P1WIN = 'p1win';
 export const P2WIN = 'p2win';
 export const COMPUTER_WIN = 'computerWin';
+export const ALL_SHIP_LENGTH = 17
