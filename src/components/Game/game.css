@@ -1,0 +1,187 @@
+.game-area {
+	display: flex;
+	margin-top: 80px;
+	justify-content: space-evenly;
+}
+
+.board {
+	display: flex;
+	width: 350px;
+	flex-wrap: wrap;
+	cursor: pointer;
+}
+
+.board.disabled {
+	cursor: not-allowed;
+}
+
+.board-container {
+	text-align: center;
+}
+
+.board-title-p1 {
+	font-size: 1.5em;
+	width: 345px;
+	height: 40px;
+	margin-bottom: 1.5em;
+	background-color: #ff0054;
+	line-height: 40px;
+	color: #fff9ff;
+	border-radius: 5px;
+}
+
+.board-title-p2 {
+	font-size: 1.5em;
+	width: 345px;
+	height: 40px;
+	margin-bottom: 1.5em;
+	background-color: #717d97;
+	line-height: 40px;
+	color: #fff9ff;
+	border-radius: 5px;
+}
+
+.block {
+	width: 40px;
+	height: 40px;
+	margin: 1.5px 1.5px 1.5px 1.5px;
+	border-radius: 5px;
+	background-color: #cbedff;
+}
+
+.block-p1 .block {
+	width: 40px;
+	height: 40px;
+	margin: 1.5px 1.5px 1.5px 1.5px;
+	border-radius: 5px;
+	background-color: #cbedff;
+}
+
+.board-p2 .block {
+	width: 40px;
+	height: 40px;
+	margin: 1.5px 1.5px 1.5px 1.5px;
+	border-radius: 5px;
+	background-color: #d7edec;
+}
+
+.block.placing {
+	background-color: rgba(255, 166, 0, 0.31);
+}
+
+.block.ship {
+	background-color: rgba(0, 0, 255, 0.299);
+}
+
+.block.Carrier {
+	background-color: #1cd4d4;
+}
+
+.block.Battleship {
+	background-color: #fe9910;
+}
+
+.block.Destroyer {
+	background-color: chartreuse;
+}
+
+.block.Submarine {
+	background-color: #ffd581;
+}
+
+.block.Patrol {
+	background-color: #fd6b51;
+}
+
+.block.sank {
+	background-color: rgba(0, 0, 0, 0.549);
+}
+
+.block.forbidden {
+	background-color: rgba(255, 0, 0, 0.294);
+}
+
+.block.selecting {
+	background-color: skyblue;
+}
+
+.block.hit {
+	background-color: red;
+}
+
+.block.miss {
+	background-color: rgba(255, 221, 0, 0.647);
+}
+
+.harbour {
+	width: 200px;
+	border: 5px solid #c2762182;
+	padding: 15px 20px;
+	border-radius: 10px;
+}
+
+.ship-container {
+	border: 3px solid #d6c638c7;
+	margin-bottom: 20px;
+	padding: 7px 14px;
+	cursor: pointer;
+	user-select: none;
+	border-radius: 10px;
+}
+
+.ship-container:hover {
+	background-color: rgba(135, 207, 235, 0.244);
+}
+
+.harbour-ship {
+	display: flex;
+	margin-bottom: 5px;
+}
+
+.ship-unit {
+	width: 10px;
+	height: 10px;
+	border: 1px solid black;
+	margin: 0 -1px -1px 0;
+}
+
+.ship-selected {
+	background-color: rgba(135, 207, 235, 0.244);
+}
+
+.ship-name {
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+	margin: 0 0 3px;
+}
+
+.waiting-title {
+	font-size: 2em;
+	margin-top: 100px;
+}
+
+.tip {
+	font-size: 2em;
+	text-align: center;
+	margin-top: 60px;
+}
+
+.game-wrapper {
+	height: calc(100vh - 200px);
+	min-height: 512px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.gameover-wrapper {
+	height: calc(100vh - 200px);
+	min-height: 688px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
